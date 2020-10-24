@@ -6,14 +6,14 @@ function preload(){
   trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
   trex_collided = loadImage("trex_collided.png");
   
-  groundImage = loadImage("ground2.png")
-  cloudsimage= loadImage("cloud.png")
-  obstacleimage1=loadImage("obstacle1.png")
-  obstacleimage2=loadImage("obstacle2.png")
-  obstacleimage3=loadImage("obstacle3.png")
-  obstacleimage4=loadImage("obstacle4.png")
-  obstacleimage5=loadImage("obstacle5.png")
-  obstacleimage6=loadImage("obstacle6.png")
+  groundImage = loadImage("ground2.png");
+  cloudsimage= loadImage("cloud.png");
+  obstacleimage1=loadImage("obstacle1.png");
+  obstacleimage2=loadImage("obstacle2.png");
+  obstacleimage3=loadImage("obstacle3.pg");
+  obstacleimage4=loadImage("obstacle4.png");
+  obstacleimage5=loadImage("obstacle5.png");
+  obstacleimage6=loadImage("obstacle6.png");
 }
 
 function setup() {
@@ -47,7 +47,7 @@ function draw() {
     ground.x = ground.width/2;
   }
   
-  trex.collide(invisibleGround);
+  //trex.collide(invisibleGround);
   spawnClouds();
   spawnObstacles();
   drawSprites();
